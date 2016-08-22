@@ -6,12 +6,13 @@ use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
-    // Get a copy of the random no generator.
+    // Get a copy of the random number generator.
     // Because we put use rand::Rng above, it has a gen_range() method available.
     // This takes 2 numbers and generates a random number between them,
     // lower inclusive and upper exclusive.
     let secret_number = rand::thread_rng().gen_range(1, 101);
     //println!("Secret number: {}", secret_number);
+
     println!("Guess the number between 1 and 100!");
 
     loop {
